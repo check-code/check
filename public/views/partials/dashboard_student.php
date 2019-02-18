@@ -61,7 +61,7 @@
         </div>
     </div>
     
-    <div class="grievance-form">
+    <div class="grievance-form row_gap">
 
         <div class="row"> 
             <div class="col-md-6 col-lg-6 div-form div-form">        

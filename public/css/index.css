@@ -1,0 +1,77 @@
+#form-bg{
+	background: linear-gradient(-90deg,rgba(251,90,63,.99),rgba(64,79,102,.99));
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	z-index: -1;
+}
+#form-box{
+	background: #fff;
+	width: 60%;
+	height: 70%;
+	padding: 1.2em;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 12px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 25px 0.5px #333;
+}
+
+#form-box img{
+	width: 90%;
+}
+
+.form-group{
+	margin-bottom:1.2em;
+}
+.form-group label{
+	font-size: 1.2em;
+	color: #005792;
+	font-weight: 600;
+	margin: 0;
+}
+.form input{
+	display: block;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	width: 100%;
+	padding: 0.2em;
+}
+
+.form input[type='text'],.form input[type='email'],.form input[type='password']{
+	border-bottom: 1px solid #13334c;
+}
+.form input[type='submit']{
+	background: #13345e;
+	color: #fff;
+	font-size: 1.1em;
+	padding:0.5em;
+	cursor: pointer;
+	border-radius: 2%;
+}
+.form .form-head{
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.8em;
+	text-transform: uppercase;
+	margin: 0.5em;
+	color: #404f66;
+}
+.link{
+	margin: 0.5em;
+	display: inline-block;
+	color: #aaa;
+	float: right;
+	font-weight: 600;
+
+}
+.link:hover{
+	color: #005792;
+}
+.link a{
+	text-decoration: none;
+	color: inherit;
+}

@@ -17,7 +17,7 @@ var grievancesystem = angular.module('grievancesystem',['ngRoute',
 grievancesystem.config(function ($routeProvider) {
 	
 	$routeProvider.when('/',{
-		template:'Hello',
+		templateUrl:'/views/templates/login.php',
 		controller:'appController'
 	})
 	.when('/aicte',{

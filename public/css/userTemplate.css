@@ -15,7 +15,7 @@ html,body{
 	border-bottom: 1px solid #000;
 }
 .leftNav {
-	height: 90vh;
+	min-height: 95vh;
 	padding-left: 0;
 	padding-top: 0.5em;
 }
@@ -70,6 +70,40 @@ html,body{
 	width: 50%;
 	margin: 0 0.5em;
 }
+/*footer*/
+
+.footer{
+		padding-left: 0;
+		text-align: center;
+		background: #404f66;
+		color: #bbb;
+		font-size: 0.8rem;
+		width: 100%;
+		z-index: 10000;
+		position: fixed;	
+		bottom: 0;
+		display: none;
+	}
+	.footerTop{
+		background: #344052;
+		color: #ddd;
+		width: 100%;
+	}
+	.footerTop ul{
+		list-style: none;
+		text-align: center;
+		margin: 0;
+		padding:0.5em;
+
+	}
+	.footerTop ul li{
+		display: inline-block;
+		padding:0 3.2em;
+	}
+	.footerTop ul li+li{
+		border-left: 2px solid #455163;
+	}
+	
 
 /*Top profile dropdown*/
 .dropdown{
@@ -109,8 +143,6 @@ html,body{
 	background: #f2f2f2;
 	height: 90vh;
 	overflow-y: auto;
-	margin-right: -5px
-
 }
 .rightAreaScroll{
 	height: 100%;
