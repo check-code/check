@@ -1,0 +1,123 @@
+html,body{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	overflow: hidden;
+	font-size: 14px;
+}
+
+.border{
+	border: 1px solid #cc3333;
+}
+.leftTop,.leftNav{
+	background: #404f66;
+	color: #fff;
+	border-bottom: 1px solid #000;
+}
+.leftNav {
+	height: 90vh;
+	padding-left: 0;
+	padding-top: 0.5em;
+}
+/*left top head*/
+.logo{
+	width: 100%
+}
+.logo img{
+	width: 100%;
+	max-width: 45px;
+}
+
+.navTop{
+	padding: 0.3em 0.1em;
+	box-shadow: 0px 0.8px 1px 1px #2a3544;
+	margin-bottom: 0.01em;
+	
+}
+.navTop-head{
+	font-weight: 600;
+}
+.container-fluid{
+	height: 100vh;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.icons{
+	min-width: 20px;
+	max-width: 15%;
+	padding-left: 0.3em;
+}
+/*left nav individual div*/
+.sideBtn{
+	width: 100%;
+	margin-bottom: 0.8em;
+	padding: 0.5em;
+	cursor: pointer;
+
+}
+.side-link{
+	display: inline-block;
+	padding-left: 0.5em;
+}
+.active{
+	border-left: 4px solid #cc3333;
+
+}
+/*notificaions ,message icons*/
+.top-icon img{
+	max-width: 35px;
+	width: 50%;
+	margin: 0 0.5em;
+}
+
+/*Top profile dropdown*/
+.dropdown{
+	text-align: center;
+	margin-right: 1.5em;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 10px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*rightArea*/
+.rightArea{
+	background: #f2f2f2;
+	height: 90vh;
+	overflow-y: auto;
+	margin-right: -5px
+
+}
+.rightAreaScroll{
+	height: 100%;
+}
+/*
+::-webkit-scrollbar {
+  width: 5px;
+
+}
+*/

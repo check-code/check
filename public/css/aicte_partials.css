@@ -1,0 +1,288 @@
+.row_gap{
+    margin-top: 0.8em;
+}
+
+.grievance-box{
+	color: #fff;
+	margin: 0;
+}
+.grievance{
+	padding: 0.2em 0.5em;
+	border-radius: 5px;
+	width: 100%;
+}
+.grievance-total{
+	background: #866561;
+}
+.grievance-pending{
+	background-color: #0098BC;
+}
+.grievance-satisfied{
+    background-color: #EE8F00;
+}
+.grievance-ongoing{
+	background: #4e8e19;
+}
+.image-bar
+{
+    float: right;
+    margin-top: 0.5em;
+}
+
+.grievance-stat-value
+{ 
+    display: block;
+    font-weight: bold;
+    color: white;
+    font-size: 1.4em;
+    margin: 0;
+ }
+.grievance-stat-name
+{
+    display: block;
+    color: white;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+hr
+{
+    border: 0.3px solid white;
+    margin:0.2em 0;
+    
+}
+.grievance-stat-time
+{
+    margin: 0em;
+    display: block;
+    font-weight: bold;
+    color: white;
+    font-size: 0.7em;
+}
+
+/*charts */
+.graph{
+	height: 33.5vh;
+    overflow: auto;
+}
+.graph div{
+     min-width: 100%;
+     min-height: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0.5px 0.2px #ccc;
+
+}
+
+/*forms ui-grids*/
+#dash-head{
+    color:#434B68;
+    margin-top: 0.5em;
+}
+.grievance-form
+{
+    background-color: white;
+    padding: 3em;
+    border-radius: 0.5em;
+    color: #5A5A5A;
+    font-size: 1em;
+    
+    
+}
+.imp
+{
+    color:red;
+}
+.div-form label
+{
+    display: inline-block;
+    width: 9em;
+}
+
+.div-form input
+{   display: inline-block;
+    background-color: #F2F1F2 ;
+    border: 2px solid #D7D7D7;
+    padding: 0.5em;
+    width: 18em;
+ 
+}
+.div-detail textarea
+{
+    
+    background-color: #F2F1F2 ;
+    border: 2px solid #D7D7D7;
+    padding: 0.5em;
+    
+   
+    
+}
+.div-form select{
+    display: inline-block;
+    background-color: #F2F1F2;
+    border: 2px solid #D7D7D7;
+    padding: 0.5em;
+    width: 18em;
+    color: #7E7E7E;
+}
+.div-form
+{
+    padding: 1em;
+}
+
+.div-detail
+{
+    padding: 1em;
+}
+.div-detail label
+{
+    display: inline-block;
+    width: 9em;
+    vertical-align: top;
+}
+
+.div-detail input
+{
+    display: inline-block;
+    background-color: #F2F1F2 ;
+    border: 2px solid #D7D7D7;
+    padding: 0.5em;
+    width: 25em !important;
+ 
+}
+
+#attachment {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+#attachment + label {
+    display: inline-block;
+    color: white;
+    background-color: #434B68;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    text-align: center;
+    box-shadow: 2px 2px 2px  #48537c,0 0 10px#4e5982;
+}
+
+
+#attachment + label {
+    cursor: pointer; /* "hand" cursor */
+}
+#attachment:focus + label,
+#attachment + label:hover {
+    background-color: #4e5982;
+}
+#attachment:focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.button-submit
+{
+    display: inline-block;
+    color: white;
+    background-color: #434B68;
+    padding: 0.3em;
+    border-radius: 0.5em;
+    text-align: center;
+    width: 10em;
+    box-shadow: 2px 2px 2px  #48537c,0 0 10px#4e5982;
+}
+
+.button-submit:hover
+{
+    color: white;
+    background-color: #4e5982;
+}
+
+#faq-head
+{
+    color:#756F6F;
+    font-weight: 700;
+}
+
+.div-faq
+{
+    color:#4F4F4F;
+    background-color: white;
+    margin-top: 1.5em;
+    box-shadow: 2px 2px 2px  silver,0 0 2px silver;;
+}
+
+.div-ques
+{
+    margin-top: 1em;
+    background-color: white;
+}
+
+.add
+{
+   float: right;
+   padding: 0em;
+   
+}
+.add:hover
+{
+    cursor: pointer;
+    margin: 0;
+}
+
+.grid
+{
+    margin:0;
+    width: 100%;
+    padding:0;
+    height: auto !important;
+    text-align: center;
+    font-size: 0.8em;
+    color: #6F6E6F;
+
+}
+
+
+.div-grievance
+{
+    background-color: white;
+}
+
+/*my grievances*/
+.grievance-heading
+{
+    color:#756F6F;
+    font-weight: 700;
+}
+
+.open-grievance
+{
+    margin-top: 1em;
+    width: 100%;
+}
+
+.table
+{
+    padding: 1.6em;
+    background-color: white;
+    border-radius: 0.5em;
+}
+
+/* .ui-grid-cell-contents 
+{
+    background-color: white !important;
+    border-bottom: 2px solid silver;
+} */
+.cell
+{
+    background-color: white;
+    border-bottom: 1px solid silver;
+   
+}
+
+.div-click:hover
+{
+    cursor: pointer;
+}
