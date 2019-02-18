@@ -8,9 +8,7 @@
 
     <link rel="stylesheet" type="text/css" href="js/libraries/angular-ui-grid/css/ui-grid.core.min.css">
     <script src="js/libraries/angular-ui-grid/ui-grid.core.min.js"></script> 
-    <script src="js/libraries/angular-ui-grid/ui-grid.auto-resize.js"></script>
-    <script src="js/libraries/angular-ui-grid/ui-grid.cellnav.min.js"></script>
-    <script src="js/libraries/angular-ui-grid/ui-grid.pagination.min.js"></script>
+
     <script src="js/libraries/angular-ui-grid/ui-grid.core.min.js"></script>
 
 </head>
@@ -48,17 +46,17 @@
     			<div class="col-md-2 leftNav">
     				<!-- navigation left dash board -->
     				<div class="sideBtn active" ng-click="page = 'dashboard_aicte'">
-    					<img src="assets/icons/dashboard.png"" class="icons">
+    					<img src="assets/icons/dashboard.png" class="icons">
     					<div class="side-link">Dashboard</div>
     				</div>
 
     				<div class="sideBtn" ng-click="page = 'grievances_aicte'">
-    					<img src="assets/icons/grievance.png"" class="icons">
+    					<img src="assets/icons/grievance.png" class="icons">
     					<div class="side-link">Grievances</div>
     				</div>
 
     				<div class="sideBtn" ng-click="page = 'searchApplication_aicte'">
-    					<img src="assets/icons/search.png"" class="icons">
+    					<img src="assets/icons/search.png" class="icons">
     					<div class="side-link">Search Application</div>
     				</div>
 

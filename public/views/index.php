@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Grievance System</title>
     <!-- jquery should be loaded first ele chart or ng view wont work -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+<script src="./../../js/libraries/jquery-3.3.1.min.js"></script>
     <script src="./../../js/libraries/angular.min.js"></script>
     <script src="./../../js/libraries/angular-route.min.js"></script>
+    <link data-require="bootstrap-css@3.1.1" data-semver="3.1.1" rel="stylesheet" href="./../../js/libraries/bootstrap3.1.1.min.css" />
+	<script data-require="ui-bootstrap@0.13.3" data-semver="0.13.3" src="./../../js/libraries/ui-bootstrap-tpls.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/gh/angular-ui/bower-ui-grid/ui-grid.min.js"></script>
+    <script src="./../../js/libraries/angular-ui-grid/ui-grid.min.js"></script>
     
     
   
@@ -22,7 +22,7 @@
      <script src="./../../../js/controllers/aicteController.js"></script>
      <script src="./../../../js/controllers/studentController.js"></script>
       
-<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="./../../js/libraries/highcharts.js"></script>
     
 </head>
 <body ng-app="grievancesystem">

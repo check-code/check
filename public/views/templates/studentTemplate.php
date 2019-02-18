@@ -47,22 +47,22 @@
                 <div class="col-md-2 leftNav">
                     <!-- navigation left dash board -->
                     <div class="sideBtn active" ng-click="page = 'dashboard_student'">
-                        <img src="assets/icons/dashboard.png"" class="icons">
+                        <img src="assets/icons/dashboard.png" class="icons">
                         <div class="side-link">Dashboard</div>
                     </div>
 
                     <div class="sideBtn" ng-click="page = 'grievances_student'">
-                        <img src="assets/icons/grievance.png"" class="icons">
+                        <img src="assets/icons/grievance.png" class="icons">
                         <div class="side-link">My Grievances</div>
                     </div>
 
                     <div class="sideBtn" ng-click="page = 'searchApplication_student'">
-                        <img src="assets/icons/search.png"" class="icons">
+                        <img src="assets/icons/search.png" class="icons">
                         <div class="side-link">Search Application</div>
                     </div>
 
                     <div class="sideBtn" ng-click="page = 'faq_student'">
-                        <img src="assets/icons/faq.png"" class="icons">
+                        <img src="assets/icons/faq.png" class="icons">
                         <div class="side-link">FAQs</div>
                     </div>
                     <br>
