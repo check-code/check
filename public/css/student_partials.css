@@ -275,3 +275,8 @@ hr
 {
     cursor: pointer;
 }
+
+.page
+{
+    display: inline-block;
+}

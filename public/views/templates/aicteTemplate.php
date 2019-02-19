@@ -13,7 +13,7 @@
 
 </head>
 <div>
-    <div ng-controller="aicteController">
+    <div ng-controller="appController">
     	<div class="container-fluid">
 
     		<div class="row">
@@ -34,7 +34,7 @@
 				 			<span class=""> &#x25BC;
 				 				<div class="dropdown-content">
 							      <a href="#">Profile</a>
-							      <a href="#">Logout</a>
+							      <a style="cursor: pointer;" ng-click="logout()">Logout</a>
 							 	</div>
 				 			</span>
 				 		</div>
@@ -45,7 +45,7 @@
     		<div class="row">
     			<div class="col-md-2 leftNav">
     				<!-- navigation left dash board -->
-    				<div class="sideBtn active" ng-click="page = 'dashboard_aicte'">
+    				<div class="sideBtn active_sidebtn" ng-click="page = 'dashboard_aicte'">
     					<img src="assets/icons/dashboard.png" class="icons">
     					<div class="side-link">Dashboard</div>
     				</div>

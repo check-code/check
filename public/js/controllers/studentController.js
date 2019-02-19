@@ -93,7 +93,30 @@ grievancesystem.controller('studentController',studentController);
         "attachment":"1",
         "action":"1"
         
-    },];
+    },    {
+        "grievance_id":"1",
+        "Grievance_type":"1",
+        "assigned_committee":"1",
+        "doi":"1",
+        "employed":"1",
+        "eta":"1",
+        "status":"1",
+        "attachment":"1",
+        "action":"1"
+        
+    },
+    {
+        "grievance_id":"1",
+        "Grievance_type":"1",
+        "assigned_committee":"1",
+        "doi":"1",
+        "employed":"1",
+        "eta":"1",
+        "status":"1",
+        "attachment":"1",
+        "action":"1"
+        
+    }];
 
     $scope.grievance_data=[
         {
@@ -144,18 +167,23 @@ grievancesystem.controller('studentController',studentController);
             
             
         },]
+
+        $scope.numRows = 5;
    
      $scope.open_grievance = {
+        data:$scope.open_grievance_data,
             enableGridMenus:false,
             enableSorting: false,
             enableFiltering:false,
             enableCellEditing:false,
             enableColumnMenus: false,
             enableHorizontalScrollbar:0,
-            enableVerticalScrollbar:1,
-            paginationPageSizes:[5,10,20,30],
-            paginationPageSize:10,
-            useExternalPagination: true,
+            enableVerticalScrollbar:0,
+            totalItems: $scope.open_grievance_data.length,
+            paginationPageSize: $scope.numRows,
+            minRowsToShow: $scope.open_grievance_data.length < $scope.numRows ? $scope.open_grievance_data : $scope.numRows,
+            enablePaginationControls: false,
+
 
             columnDefs: [
                 { name : "grievance_id",display: 'Grievance ID', cellTemplate: '<div class="ui-grid-cell-contents cell">{{COL_FIELD CUSTOM_FILTERS}}</div>' },
@@ -169,20 +197,23 @@ grievancesystem.controller('studentController',studentController);
                 {name:"action",display: 'Action', cellTemplate: "<div class='ui-grid-cell-contents cell div-click'><img src='assets/images/attachment.png' height=16 width=16' value='{{COL_FIELD CUSTOM_FILTERS}}'>&nbsp;&nbsp;<img src='assets/images/attachment.png' height=16 width=16' value='{{COL_FIELD CUSTOM_FILTERS}}'></div> "},
                         ],
 
-                data:$scope.open_grievance_data
+                
              };
 
              $scope.grievance = {
+                data:$scope.grievance_data,
                 enableGridMenus:false,
                 enableSorting: false,
                 enableFiltering:false,
                 enableCellEditing:false,
                 enableColumnMenus: false,
                 enableHorizontalScrollbar:0,
-                enableVerticalScrollbar:1,
-                paginationPageSizes:[5,10,20,30],
-                paginationPageSize:10,
-                useExternalPagination: true,
+                enableVerticalScrollbar:0,
+                totalItems: $scope.grievance_data.length,
+                paginationPageSize: $scope.numRows,
+                minRowsToShow: $scope.grievance_data.length < $scope.numRows ? $scope.grievance_data : $scope.numRows,
+                enablePaginationControls: false,
+
     
         columnDefs: [
                     { name : "grievance_id",display: 'Grievance ID', cellTemplate: '<div class="ui-grid-cell-contents cell">{{COL_FIELD CUSTOM_FILTERS}}</div>' },
@@ -196,10 +227,11 @@ grievancesystem.controller('studentController',studentController);
                     
                             ],
     
-                    data:$scope.grievance_data
+                   
         };
 
         $scope.grievance_search = {
+            data:$scope.grievance_data,
             enableGridMenus:false,
             enableSorting: false,
             enableFiltering:false,
@@ -207,9 +239,10 @@ grievancesystem.controller('studentController',studentController);
             enableColumnMenus: false,
             enableHorizontalScrollbar:0,
             enableVerticalScrollbar:1,
-            paginationPageSizes:[5,10,20,30],
-            paginationPageSize:10,
-            useExternalPagination: true,
+            totalItems: $scope.grievance_data.length,
+            paginationPageSize: $scope.numRows,
+            minRowsToShow: $scope.grievance_data.length < $scope.numRows ? $scope.grievance_data : $scope.numRows,
+            enablePaginationControls: false,
 
     columnDefs: [
                 { name : "grievance_id",display: 'Grievance ID', cellTemplate: '<div class="ui-grid-cell-contents cell">{{COL_FIELD CUSTOM_FILTERS}}</div>' },
@@ -223,7 +256,7 @@ grievancesystem.controller('studentController',studentController);
                 
                         ],
 
-                data:$scope.grievance_data
+                
     };
 
            

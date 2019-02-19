@@ -4,7 +4,10 @@ var grievancesystem = angular.module('grievancesystem',['ngRoute',
 														'ui.grid.autoResize',
 														'ui.grid.cellNav',
 														'ui.bootstrap',
-														'ui.grid.pagination']);
+														'ui.grid.pagination',
+														'ngCookies']);
+
+angular.module('grievancesystem').constant('API_URL','http://127.0.0.1:8000/');
 /*
 var grievancesystem = angular.module('grievancesystem',['ngRoute',
 														'ui.grid',

@@ -60,7 +60,7 @@ html,body{
 	display: inline-block;
 	padding-left: 0.5em;
 }
-.active{
+.active_sidebtn{
 	border-left: 4px solid #cc3333;
 
 }
@@ -82,7 +82,7 @@ html,body{
 		z-index: 10000;
 		position: fixed;	
 		bottom: 0;
-		display: none;
+		display: block;
 	}
 	.footerTop{
 		background: #344052;
@@ -141,7 +141,7 @@ html,body{
 /*rightArea*/
 .rightArea{
 	background: #f2f2f2;
-	height: 90vh;
+	max-height: 92vh;
 	overflow-y: auto;
 }
 .rightAreaScroll{

@@ -151,7 +151,20 @@ grievancesystem.controller('aicteController',aicteController);
                 
                                 
                              };
-                             $scope.grievance_data=[]
+                             $scope.grievance_data=[
+                                {
+                                    "grievance_id":"1",
+                                    "Grievance_type":"1",
+                                    "assigned_committee":"1",
+                                    "doi":"1",
+                                    "employed":"1",
+                                    "eta":"1",
+                                    "status":"1",
+                                    "action_taken_on":"1",
+                                    "action":"1",
+                                    "attachment":"1",
+
+                             }];
                              $scope.grievance = {
                                 data:$scope.grievance_data,
                                 enableGridMenus:false,
@@ -177,6 +190,7 @@ grievancesystem.controller('aicteController',aicteController);
                                     {name:"eta", display: 'ETA' ,cellTemplate: '<div class="ui-grid-cell-contents cell">{{COL_FIELD CUSTOM_FILTERS}}</div> '},
                                     {name:"status" ,display: 'Status', cellTemplate: '<div class="ui-grid-cell-contents cell">{{COL_FIELD CUSTOM_FILTERS}}</div> '},
                                     {name:"action_taken_on" ,display: 'Action Taken on', cellTemplate: '<div class="ui-grid-cell-contents cell">{{COL_FIELD CUSTOM_FILTERS}}</div> '},
+                                    {name:"action" ,display: 'Action', cellTemplate: '<div class="ui-grid-cell-contents cell"><a class="cell-link" href="#">view<a></div> '},
                                     {name:"attachment",display: 'Attachment',cellTemplate: "<div class='ui-grid-cell-contents cell div-click'><img src='assets/images/attachment.png' height=16 width=16' value='{{COL_FIELD CUSTOM_FILTERS}}'></div> "  },
                                     
                                             ],
