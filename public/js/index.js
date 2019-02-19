@@ -3,6 +3,7 @@ var grievancesystem = angular.module('grievancesystem',['ngRoute',
 														'ui.grid',
 														'ui.grid.autoResize',
 														'ui.grid.cellNav',
+														'ui.bootstrap',
 														'ui.grid.pagination']);
 /*
 var grievancesystem = angular.module('grievancesystem',['ngRoute',

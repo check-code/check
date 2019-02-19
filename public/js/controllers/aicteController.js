@@ -79,22 +79,64 @@ grievancesystem.controller('aicteController',aicteController);
                         "attachment":"1",
                         "action":"1"
                         
-                    },];
+                    },
+                    {
+                        "grievance_id":"1",
+                        "Grievance_type":"1",
+                        "assigned_committee":"1",
+                        "doi":"1",
+                        "employed":"1",
+                        "eta":"1",
+                        "status":"1",
+                        "attachment":"1",
+                        "action":"1"
+                        
+                    },
+                    {
+                        "grievance_id":"1",
+                        "Grievance_type":"1",
+                        "assigned_committee":"1",
+                        "doi":"1",
+                        "employed":"1",
+                        "eta":"1",
+                        "status":"1",
+                        "attachment":"1",
+                        "action":"1"
+                        
+                    },
+                    {
+                        "grievance_id":"1",
+                        "Grievance_type":"1",
+                        "assigned_committee":"1",
+                        "doi":"1",
+                        "employed":"1",
+                        "eta":"1",
+                        "status":"1",
+                        "attachment":"1",
+                        "action":"1"
+                        
+                    },
+                    
+                ];
+                    
                 
 
-                   
+                        $scope.numRows = 5;
                      $scope.open_grievance = {
+                        data:$scope.open_grievance_data,
                             enableGridMenus:false,
                             enableSorting: false,
                             enableFiltering:false,
                             enableCellEditing:false,
                             enableColumnMenus: false,
                             enableHorizontalScrollbar:0,
-                            enableVerticalScrollbar:1,
-                            paginationPageSizes:[5,10,20,30],
-                            paginationPageSize:10,
-                            useExternalPagination: true,
-                
+                            enableVerticalScrollbar:0,
+                            totalItems: $scope.open_grievance_data.length,
+                            paginationPageSize: $scope.numRows,
+                            minRowsToShow: $scope.open_grievance_data.length < $scope.numRows ? $scope.open_grievance_data : $scope.numRows,
+                            enablePaginationControls: false,
+                            
+
                             columnDefs: [
                                 { name : "grievance_id",display: 'Grievance ID', cellTemplate: '<div class="ui-grid-cell-contents cell">{{COL_FIELD CUSTOM_FILTERS}}</div>' },
                                 { name:"Grievance_type" ,display: 'Grievance Type', cellTemplate: '<div class="ui-grid-cell-contents cell">{{COL_FIELD CUSTOM_FILTERS}}</div> '},
@@ -107,20 +149,24 @@ grievancesystem.controller('aicteController',aicteController);
                                 {name:"action",display: 'Action', cellTemplate: "<div class='ui-grid-cell-contents cell div-click'><img src='assets/images/attachment.png' height=16 width=16' value='{{COL_FIELD CUSTOM_FILTERS}}'></div> "},
                                         ],
                 
-                                data:$scope.open_grievance_data
+                                
                              };
-                
+                             $scope.grievance_data=[]
                              $scope.grievance = {
+                                data:$scope.grievance_data,
                                 enableGridMenus:false,
                                 enableSorting: false,
                                 enableFiltering:false,
                                 enableCellEditing:false,
                                 enableColumnMenus: false,
                                 enableHorizontalScrollbar:0,
-                                enableVerticalScrollbar:1,
-                                paginationPageSizes:[5,10,20,30],
-                                paginationPageSize:10,
-                                useExternalPagination: true,
+                                enableVerticalScrollbar:0,
+                                totalItems: $scope.grievance_data.length,
+                                paginationPageSize: $scope.numRows,
+                                minRowsToShow: $scope.grievance_data.length < $scope.numRows ? $scope.grievance_data : $scope.numRows,
+                                enablePaginationControls: false,
+                                
+
                     
                         columnDefs: [
                                     { name : "grievance_id",display: 'Grievance ID', cellTemplate: '<div class="ui-grid-cell-contents cell">{{COL_FIELD CUSTOM_FILTERS}}</div>' },
@@ -135,21 +181,23 @@ grievancesystem.controller('aicteController',aicteController);
                                     
                                             ],
                     
-                                    data:$scope.grievance_data
+                                    
                         };
                 
                         $scope.grievance_search = {
+                            data:$scope.grievance_data,
                             enableGridMenus:false,
                             enableSorting: false,
                             enableFiltering:false,
                             enableCellEditing:false,
                             enableColumnMenus: false,
                             enableHorizontalScrollbar:0,
-                            enableVerticalScrollbar:1,
-                            paginationPageSizes:[5,10,20,30],
-                            paginationPageSize:10,
-                            useExternalPagination: true,
-                
+                            enableVerticalScrollbar:0,
+                            totalItems: $scope.grievance_data.length,
+                            paginationPageSize: $scope.numRows,
+                            minRowsToShow: $scope.grievance_data.length < $scope.numRows ? $scope.grievance_data : $scope.numRows,
+                            enablePaginationControls: false,
+
                     columnDefs: [
                                 { name : "grievance_id",display: 'Grievance ID', cellTemplate: '<div class="ui-grid-cell-contents cell">{{COL_FIELD CUSTOM_FILTERS}}</div>' },
                                 { name:"Grievance_type" ,display: 'Grievance Type', cellTemplate: '<div class="ui-grid-cell-contents cell">{{COL_FIELD CUSTOM_FILTERS}}</div> '},
@@ -162,20 +210,22 @@ grievancesystem.controller('aicteController',aicteController);
                                 
                                         ],
                 
-                                data:$scope.grievance_data
+                                
                     };
-
+                    $scope.university_data=[];
                     $scope.manage_ombudsman = {
+                        data:$scope.university_data,
                         enableGridMenus:false,
                         enableSorting: false,
                         enableFiltering:false,
                         enableCellEditing:false,
                         enableColumnMenus: false,
                         enableHorizontalScrollbar:0,
-                        enableVerticalScrollbar:1,
-                        paginationPageSizes:[5,10,20,30],
-                        paginationPageSize:10,
-                        useExternalPagination: true,
+                        enableVerticalScrollbar:0,
+                        totalItems: $scope.university_data.length,
+                        paginationPageSize: $scope.numRows,
+                        minRowsToShow: $scope.university_data.length < $scope.numRows ? $scope.university_data : $scope.numRows,
+                        enablePaginationControls: false,
             
                 columnDefs: [
                             { name : "application_id",display: 'Applicant name', cellTemplate: '<div class="ui-grid-cell-contents cell">{{COL_FIELD CUSTOM_FILTERS}}</div>' },
@@ -189,18 +239,21 @@ grievancesystem.controller('aicteController',aicteController);
             
                             
                 };
-
+                
+                
                 $scope.history = {
+                    data:$scope.university_data,
                     enableGridMenus:false,
                     enableSorting: false,
                     enableFiltering:false,
                     enableCellEditing:false,
                     enableColumnMenus: false,
                     enableHorizontalScrollbar:0,
-                    enableVerticalScrollbar:1,
-                    paginationPageSizes:[5,10,20,30],
-                    paginationPageSize:10,
-                    useExternalPagination: true,
+                    enableVerticalScrollbar:0,
+                    totalItems: $scope.university_data.length,
+                    paginationPageSize: $scope.numRows,
+                    minRowsToShow: $scope.university_data.length < $scope.numRows ? $scope.university_data : $scope.numRows,
+                    enablePaginationControls: false,
         
             columnDefs: [
                         { name : "application_id",display: 'Applicant name', cellTemplate: '<div class="ui-grid-cell-contents cell">{{COL_FIELD CUSTOM_FILTERS}}</div>' },
@@ -215,18 +268,21 @@ grievancesystem.controller('aicteController',aicteController);
                         
             };
                 
-
+            $scope.university_search_data=[];
             $scope.university_search = {
+                data:$scope.university_search_data,
                 enableGridMenus:false,
                 enableSorting: false,
                 enableFiltering:false,
                 enableCellEditing:false,
                 enableColumnMenus: false,
                 enableHorizontalScrollbar:0,
-                enableVerticalScrollbar:1,
-                paginationPageSizes:[5,10,20,30],
-                paginationPageSize:10,
-                useExternalPagination: true,
+                enableVerticalScrollbar:0,
+                totalItems: $scope.university_search_data.length,
+                paginationPageSize: $scope.numRows,
+                minRowsToShow: $scope.university_search_data.length < $scope.numRows ? $scope.university_search_data : $scope.numRows,
+                enablePaginationControls: false,
+
     
         columnDefs: [
                     { name : "university_code",display: 'University Code', cellTemplate: '<div class="ui-grid-cell-contents cell">{{COL_FIELD CUSTOM_FILTERS}}</div>' },

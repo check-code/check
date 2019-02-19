@@ -28,6 +28,7 @@
     <!-- ****** favicons ****** -->
     <title>Online Grievance Management System</title>
     <!-- jquery should be loaded first ele chart or ng view wont work -->
+<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
@@ -35,6 +36,15 @@
     <script src="./../../js/libraries/angular-route.min.js"></script>
     
     <script src="https://cdn.jsdelivr.net/gh/angular-ui/bower-ui-grid/ui-grid.min.js"></script>
+=======
+<script src="./../../js/libraries/jquery-3.3.1.min.js"></script>
+    <script src="./../../js/libraries/angular.min.js"></script>
+    <script src="./../../js/libraries/angular-route.min.js"></script>
+    <link data-require="bootstrap-css@3.1.1" data-semver="3.1.1" rel="stylesheet" href="./../../js/libraries/bootstrap3.1.1.min.css" />
+	<script data-require="ui-bootstrap@0.13.3" data-semver="0.13.3" src="./../../js/libraries/ui-bootstrap-tpls.min.js"></script>
+
+    <script src="./../../js/libraries/angular-ui-grid/ui-grid.min.js"></script>
+>>>>>>> 117a7fb0a4999d9a3ee3aca352ff4526890d1643
     
     <link rel="stylesheet" href="js/libraries/bootstrap.min.css">
     
@@ -45,9 +55,13 @@
      <script src="./../../../js/controllers/aicteController.js"></script>
      <script src="./../../../js/controllers/studentController.js"></script>
       
+<<<<<<< HEAD
 <script src="https://code.highcharts.com/highcharts.js"></script>
 
 <link rel="stylesheet" type="text/css" href="css/index.css">
+=======
+<script src="./../../js/libraries/highcharts.js"></script>
+>>>>>>> 117a7fb0a4999d9a3ee3aca352ff4526890d1643
     
 </head>
 <body ng-app="grievancesystem">

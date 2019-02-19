@@ -241,6 +241,7 @@ hr
     text-align: center;
     font-size: 0.8em;
     color: #6F6E6F;
+    background-color: white;
 
 }
 
@@ -267,6 +268,7 @@ hr
 {
     padding: 1.6em;
     background-color: white;
+    height: auto;
     border-radius: 0.5em;
 }
 
@@ -285,4 +287,9 @@ hr
 .div-click:hover
 {
     cursor: pointer;
+}
+
+.page
+{
+    display: inline-block;
 }
