@@ -3,8 +3,8 @@ var grievancesystem= angular.module('grievancesystem');
 grievancesystem.controller('studentController',studentController);
 
 
- function studentController($scope) {
- 	$scope.page='dashboard_student';
+ function studentController($scope,$http,studentService,API_URL) {
+ 	$scope.page='searchApplication_student';
 
  	$scope.total_grievances = 18;
     $scope.ongoing_grievance = 1;
@@ -25,9 +25,24 @@ grievancesystem.controller('studentController',studentController);
     {"category":"Placement & training cell"},
     {"category":"Security"},{"category":"Hostel"},{"category":"Ragging"},{"category":"Canteen"},
     {"category":"Transport"}];
+    $scope.searchId='';
 
+// grievance search starts
+    $scope.searchGrievance =  function(searchId){
+    studentService.searchGrievance(searchId).then(function(success){
+            // $scope.grievance_search_data=success.data.grievance_search;
+            $scope.grievance_search_data=$scope.grievance_data;
 
+            console.log($scope.grievance_search)
+        },
+        function(error){
+            console.log(error)
+            $scope.grievance_search_data=$scope.grievance_data;
 
+        });
+    
+    };
+//  grievance search ends
 
 
     $scope.faq =[{ "ques":"how to file grievance? How we will know it is resolved",
@@ -166,7 +181,7 @@ grievancesystem.controller('studentController',studentController);
             "attachment":"1",
             
             
-        },]
+        },];
 
         $scope.numRows = 5;
    
@@ -231,7 +246,7 @@ grievancesystem.controller('studentController',studentController);
         };
 
         $scope.grievance_search = {
-            data:$scope.grievance_data,
+            data:$scope.grievance_search_data,
             enableGridMenus:false,
             enableSorting: false,
             enableFiltering:false,
@@ -249,7 +264,6 @@ grievancesystem.controller('studentController',studentController);
                 { name:"Grievance_type" ,display: 'Grievance Type', cellTemplate: '<div class="ui-grid-cell-contents cell">{{COL_FIELD CUSTOM_FILTERS}}</div> '},
                 { name:"assigned_committee" ,display: 'Assigned Committee',  cellTemplate: '<div class="ui-grid-cell-contents cell">{{COL_FIELD CUSTOM_FILTERS}}</div>'},
                 {name :"doi" ,display: 'Date of Issue' ,cellTemplate: '<div class="ui-grid-cell-contents cell">{{COL_FIELD CUSTOM_FILTERS}}</div>' },
-                {name:"employed" , display: 'employed',cellTemplate: '<div class="ui-grid-cell-contents cell">{{COL_FIELD CUSTOM_FILTERS}}</div> '},
                 {name:"eta", display: 'ETA' ,cellTemplate: '<div class="ui-grid-cell-contents cell">{{COL_FIELD CUSTOM_FILTERS}}</div> '},
                 {name:"status" ,display: 'Status', cellTemplate: '<div class="ui-grid-cell-contents cell">{{COL_FIELD CUSTOM_FILTERS}}</div> '},
                 {name:"attachment",display: 'Attachment',cellTemplate: "<div class='ui-grid-cell-contents cell div-click'><img src='assets/images/attachment.png' height=16 width=16' value='{{COL_FIELD CUSTOM_FILTERS}}'></div> "  },

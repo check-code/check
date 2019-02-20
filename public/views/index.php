@@ -48,14 +48,17 @@
 
      <script src="js/controllers/aicteController.js"></script>
      <script src="js/controllers/studentController.js"></script>
+    <script src="js/services/studentService.js"></script>
+     
       
 <script src="./../../js/libraries/highcharts.js"></script>
 <link rel="stylesheet" type="text/css" href="css/index.css">
     
 </head>
 <body ng-app="grievancesystem">
-    <div ng-view></div>
-
+    <div ng-controller='appController'>
+        <div ng-view></div>
+    </div>
    
 </body>
 

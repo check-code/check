@@ -1,5 +1,5 @@
 #form-bg{
-  background: url('../assets/images/login-bg.jpg');
+  background: url('../assets/images/login-bg.png');
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -8,46 +8,53 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-/*any overlay effect should he here*/
+/*any overlay effect should be here*/
 .overlay{
    width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: rgba(20,0,10,0.5);
+  background: rgba(20,20,20,0.6);
 }
+
+.row {
+  margin-left: 0;
+}
+
 #form-box{
   background: #fff;
-  width: 45%;
-  min-height: 50%;
+  width: 500px;
+  min-height: 350px;
   padding: 1.5em;
   position: absolute;
   left: 60%;
   top: 50%;
   transform: translate(-30%,-50%);
   font-size: 12.5px;
-  border-radius: 20px;
+  border-radius: 10px;
   /*box-shadow: 0px 0px 25px 0.5px #333;*/
 }
 
 #form-box img{
-  width: 100%;
+  width: 80px;
+  height: 80px;
 }
 .form-head{
-  font-size: 2.5em;
-  margin: 0.5em;
-  color: #344052;
+  font-size: 1.7em;
+  color: #3e4e68;
   font-weight: 500;
   text-align: center;
+  font-family: arial;
 
 }
+
 .bold{
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1.5em;
 
 }
 .gap{
-  margin-top: 0.5em;
-  margin-bottom:0.5em;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 .tabs{
@@ -83,19 +90,21 @@
 .form-group input[type='submit']{
   background: #019cb7;
   color: #fff;
-  font-size: 1.4em;
-  padding:0.4em 1.2em;
+  font-size: 1.2em;
+  padding:0.3em 2.2em;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 5px;
   display: inline-block;
   width: auto;
+  margin-top: 20px;
+  box-shadow: 0px 0px 8px 2px #bababa;
 }
 
 #hr3{
   width: 50%;
-  height: 2.68px;
+  height: 2px;
   float: left;
-  margin-left: 0.2em;
+  margin-left: 1em;
   background: linear-gradient(to right, #019cb7 0%, #019cb7 33.34%, 
                               #ea8b1b  33.34%, #ea8b1b  66.67%,
                               #83be29 66.67%, #83be29 100%);

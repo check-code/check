@@ -1,6 +1,5 @@
 $(function() {
 
-// script for active links start
    $(".sideBtn").click(function() {
       // remove classes from all
       $(".sideBtn").removeClass("active_sidebtn");
@@ -8,16 +7,13 @@ $(function() {
       $(this).addClass("active_sidebtn");
    });
 
-// script for active links ends
-
- // footer script starts
       $('.sideBtn').on('click',function() {
        if(!$('.rightArea').get(0).scrollHeight > $('.rightArea').height()){
         $( '.footer').show(); 
       }
       
     });
-     
+
    var height;
     var trigger = 650;
     var scroll;
@@ -61,8 +57,4 @@ $(function() {
         console.log('hide')
       }
     });
-    // footer script ends
-
-
-
 });
