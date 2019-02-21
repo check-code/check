@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- ****** favicons ****** -->
+    <!-- ****** favicons starts****** -->
     <link rel="shortcut icon" href="assets/favicon/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 64x64" href="assets/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="196x196" href="assets/favicon/favicon-192.png">
@@ -28,28 +28,45 @@
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="assets/favicon/favicon-144.png">
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
-    <!-- ****** favicons ****** -->
+    <!-- ****** favicons ends****** -->
+
     <title>Online Grievance Management System</title>
     <!-- jquery should be loaded first ele chart or ng view wont work -->
-    <script src="./../../js/libraries/jquery-3.3.1.min.js"></script>
-    <script src="./../../js/libraries/angular.min.js"></script>
-    <script src="./../../js/libraries/angular-route.min.js"></script>
-    <script type="text/javascript" src="./../../js/libraries/angular-cookies.js"></script>
+    <script src="js/libraries/jquery-3.3.1.min.js"></script>
+
+    <!-- angular starts -->
+    <script src="js/libraries/angular.min.js"></script>
+    <script src="js/libraries/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/libraries/angular-cookies.js"></script>
+    <!-- angular ends -->
+
+    <!-- bootstrap starts -->
     <link data-require="bootstrap-css@3.1.1" data-semver="3.1.1" rel="stylesheet" href="./../../js/libraries/bootstrap3.1.1.min.css" />
 	<script data-require="ui-bootstrap@0.13.3" data-semver="0.13.3" src="./../../js/libraries/ui-bootstrap-tpls.min.js"></script>
-
+    
     <script src="./../../js/libraries/angular-ui-grid/ui-grid.min.js"></script>
     
     <link rel="stylesheet" href="js/libraries/bootstrap.min.css">
-    
+    <!-- bootstarp ends -->
   
     <script src="js/index.js"></script>
-     <script src="js/controllers/appController.js"></script>
 
+    <!-- main controller -->
+     <script src="js/controllers/appController.js"></script>
+    <script src="js/services/appService.js"></script>
+
+
+     <!-- aicte starts -->
      <script src="js/controllers/aicteController.js"></script>
+
+     <!-- aicte ends -->
+
+     <!-- student starts -->
      <script src="js/controllers/studentController.js"></script>
     <script src="js/services/studentService.js"></script>
-     
+     <!-- student ends -->
+
+
       
 <script src="./../../js/libraries/highcharts.js"></script>
 <link rel="stylesheet" type="text/css" href="css/index.css">

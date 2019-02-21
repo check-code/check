@@ -24,14 +24,11 @@ $(function() {
     height = $('.rightArea').height();
 
         scroll=$(this).scrollTop();
-        console.log(trigger - height+" "+scroll);
       if (scroll > trigger - height) {
         $( '.footer').show(100);
-        console.log('show')
 
       } else {
         $('.footer').hide(100);
-        console.log('hide')
       }
 
     $('.sideBtn').on('click',function() {
@@ -47,14 +44,13 @@ $(function() {
     $('.rightArea').scroll(function() {
         height = $('.rightArea').height();
         scroll=$(this).scrollTop() ;
-        console.log(height -trigger+" "+scroll);
+
       if (scroll > trigger - height) {
         $( '.footer').show(100);
-        console.log('show')
 
       } else {
         $('.footer').hide(100);
-        console.log('hide')
+      
       }
     });
 });

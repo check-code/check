@@ -63,6 +63,10 @@ hr
 
 
 /*forms*/
+
+.dashboard_btn{
+    margin-top: 30px;
+}
 #dash-head{
     color:#434B68;
     margin-top: 0.5em;
@@ -92,7 +96,7 @@ hr
     background-color: #F2F1F2 ;
     border: 2px solid #D7D7D7;
     padding: 0.5em;
-    width: 18em;
+    width: 25em;
  
 }
 .div-detail textarea
@@ -110,7 +114,7 @@ hr
     background-color: #F2F1F2;
     border: 2px solid #D7D7D7;
     padding: 0.5em;
-    width: 18em;
+    width: 25em;
     color: #7E7E7E;
 }
 .div-form
@@ -155,7 +159,8 @@ hr
     padding: 0.5em;
     border-radius: 0.5em;
     text-align: center;
-    box-shadow: 2px 2px 2px  #48537c,0 0 10px#4e5982;
+    margin-left: 10px;
+    /*box-shadow: 2px 2px 2px  #48537c,0 0 10px#4e5982;*/
 }
 
 
@@ -221,7 +226,7 @@ hr
     margin: 0;
 }
 
-.grid
+.sub-grid
 {
     margin:0;
     width: 100%;

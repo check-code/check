@@ -10,6 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
  */
+function cannotProcessData(){
+	return response("Cannot Process Data",412);
+}
 
 Route::get('/', function () {
     return View::make('index');
@@ -24,7 +27,20 @@ Route::get('/testTemplate', function(){
     return view('templates/testTemplate');
 });
 
-Route::post('/login','LoginController@loginCheck')->name('submitLogin');
+Route::post('/register','LoginController@register');
+
+Route::get('/grievance/download/documents/{path}','grievanceController@download');
+
+
+Route::middleware('auth.basic')->group(function(){
+    Route::resource('/grievances', 'grievanceController');
+	Route::post('/login','LoginController@checkAuth');
+	Route::get('/grievaceSearch/{id}','grievanceController@show');
+    Route::get('/grievance/{type}','grievanceController@statistics');
+    
+    Route::post('/grievances/updateStatus','grievanceController@updateStatus');
+});
+
 
 Route::get('/ui_gridSample', function(){
     return view('templates/ui_gridSample');

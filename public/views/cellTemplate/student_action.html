@@ -1,0 +1,5 @@
+<div class='ui-grid-cell-contents cell '>
+    <button style="background-color:transparent;border:none;" ng-click="grid.appScope.action(row.entity.grievance_id,1)" ng-disabled="row.entity.status!='addressed'"><img src='assets/icons/likeUp.png' height=16 width=16 value='{{COL_FIELD CUSTOM_FILTERS}}' ></button>
+
+    &nbsp;&nbsp;<button style="background-color:white;border:none;" ng-click="action(row.entity.grievance_id,0)" ng-disabled="row.entity.status!='addressed'"><img src='assets/icons/likeDown.png' height=16 width=16 value='{{COL_FIELD CUSTOM_FILTERS}}'></button>
+</div> 
